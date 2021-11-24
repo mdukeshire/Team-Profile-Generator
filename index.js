@@ -29,7 +29,7 @@ inquirer
             type: 'input',
             message: 'Enter office number?',
         },
-        
+
     ])
     .then((answers) => {
         console.log(answers)
@@ -43,12 +43,12 @@ function menu() {
     inquirer
         .prompt([
             {
-                name: 'team',
+                name: 'role',
                 type: 'list',
                 choices: ['Engineer', 'Intern', 'Done'],
                 message: 'Add a team member?',
             },
-        
+
         ])
         .then(userchoice => {
             console.log(userchoice);
@@ -96,7 +96,7 @@ function engineerInquire() {
             id.push(answers.engineerId);
             menu();
         })
-    }
+}
 
 function internInquire() {
     inquirer
@@ -131,10 +131,10 @@ function internInquire() {
         })
 }
 
-function generateTeam(team) {
-    console.log(team);
-    const template = template(team);
-    fs.writeFile('template.html', template, 'utf-8', (err) => err ?
+function generateTeam(member) {
+    console.log(member);
+    const newTemplate = template(member);
+    fs.writeFile('index.html', newTemplate, 'utf-8', (err) => err ?
         console.log(err) :
         console.log('Successful'))
-}                    
+}
