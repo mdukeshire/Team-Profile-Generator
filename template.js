@@ -18,7 +18,7 @@ function template(member) {
     
     <body>
     
-        <div class="jumbotron jumbotron-fluid" style="background-color: darkred; color: white; text-align: center;">
+        <div class="jumbotron jumbotron-fluid" style="background-color: darkblue; color: whitesmoke; text-align: center;">
             <div class="container">
                 <h1 class="display-4">My team</h1>
             </div>
@@ -29,7 +29,7 @@ function template(member) {
         <div class="row">
     
             <div class="card employee-card">
-                <div class="card-header">
+                <div class="card-header" style="background-color: darkblue; color: whitesmoke; text-align: center;">
                     <h2 class=card-title">${member[0].getName()}</h2>
                     <h3 class="card-title"><i class="fas fa-mug mr-2"></i>${member[0].getRole()}</h3>
                 </div>
@@ -44,7 +44,7 @@ function template(member) {
             </div>
     
             <div class="card employee-card">
-                <div class="card-header">
+                <div class="card-header" style="background-color: darkblue; color: whitesmoke; text-align: center;">
                     <h2 class=card-title">${member[1].getName()}</h2>
                     <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>${member[1].getRole()}</h3>
                 </div>
@@ -60,7 +60,7 @@ function template(member) {
             </div>
     
             <div class="card employee-card">
-                <div class="card-header">
+                <div class="card-header" style="background-color: darkblue; color: whitesmoke; text-align: center;">
                     <h2 class=card-title">${member[2].getName()}</h2>
                     <h3 class="card-title"><i class="fas fa-graduate mr-2"></i>${member[2].getRole()}</h3>
                 </div>
