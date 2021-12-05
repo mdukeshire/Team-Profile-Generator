@@ -7,6 +7,7 @@ const fs = require('fs');
 const list = [];
 const id = [];
 
+function managerInquirer(){
 inquirer
     .prompt([
         {
@@ -38,7 +39,7 @@ inquirer
         id.push(answers.managerId)
         menu();
     });
-
+}
 function menu() {
     inquirer
         .prompt([
@@ -52,13 +53,15 @@ function menu() {
         ])
         .then(userchoice => {
             console.log(userchoice);
-            switch (userchoice.team) {
+            switch (userchoice.role) {
                 case 'Engineer':
                     engineerInquire();
                     break;
                 case 'Intern':
                     internInquire();
+                    break;
                 default:
+                    console.log(list);
                     generateTeam(list);
             }
 
@@ -133,8 +136,10 @@ function internInquire() {
 
 function generateTeam(member) {
     console.log(member);
-    const newTemplate = template(member);
-    fs.writeFile('index.html', newTemplate, 'utf-8', (err) => err ?
+   // const newTemplate = template(member);
+    fs.writeFile('index.html', template(member), 'utf-8', (err) => err ?
         console.log(err) :
         console.log('Successful'))
 }
+
+    managerInquirer();

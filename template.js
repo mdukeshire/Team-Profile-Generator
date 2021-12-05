@@ -30,7 +30,7 @@ function template(member) {
     
             <div class="card employee-card">
                 <div class="card-header" style="background-color: darkblue; color: whitesmoke; text-align: center;">
-                    <h2 class=card-title">${member[0].getName()}</h2>
+                    <h2 class="card-title">${member[0].getName()}</h2>
                     <h3 class="card-title"><i class="fas fa-mug mr-2"></i>${member[0].getRole()}</h3>
                 </div>
                 <div class="card-body">
@@ -45,7 +45,7 @@ function template(member) {
     
             <div class="card employee-card">
                 <div class="card-header" style="background-color: darkblue; color: whitesmoke; text-align: center;">
-                    <h2 class=card-title">${member[1].getName()}</h2>
+                    <h2 class="card-title">${member[1].getName()}</h2>
                     <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>${member[1].getRole()}</h3>
                 </div>
                 <div class="card-body">
@@ -61,7 +61,7 @@ function template(member) {
     
             <div class="card employee-card">
                 <div class="card-header" style="background-color: darkblue; color: whitesmoke; text-align: center;">
-                    <h2 class=card-title">${member[2].getName()}</h2>
+                    <h2 class="card-title">${member[2].getName()}</h2>
                     <h3 class="card-title"><i class="fas fa-graduate mr-2"></i>${member[2].getRole()}</h3>
                 </div>
                 <div class="card-body">
